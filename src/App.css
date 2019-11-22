@@ -8,15 +8,45 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  padding: 70px 0;
+
 }
 
-.App-link {
+
+.title h1, h2{
+    font-weight: 200;
+
+    opacity: 1;
+
+    position: relative;
+    
+    animation-name: title-fade;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    
+}
+
+@keyframes title-fade {
+    from {
+	top: 20px;
+	opacity: 0;
+    }
+    to {
+	top: 0px;
+	opacity: 1;
+    }
+}
+
+
+.app-link {
   color: #09d3ac;
 }
