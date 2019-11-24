@@ -28,10 +28,14 @@ function App() {
 
 	      <div className="project-grid">
 
-		  <ProjectTile title="Chair Game" description="Amazing mobile game for iOS everyone can love; It's musical chairs for your smartphone!" className="fade fade-2" />
+		  <ProjectTile title="Chair Game" description="Amazing mobile game for iOS everyone can love; It's musical chairs for your smartphone!" url="https://apps.apple.com/no/app/chair-game-musical-chairs/id1210198384?l=no" />
+		  <ProjectTile title="Me Camera" description="Prank camera that takes a photo of the photograph instead of the subject." url="https://apps.apple.com/us/app/mecamera/id1071230400?ls=1"/>
 
 	      </div>
 	  </div>
+
+
+	  <h1 className="fade fade-3">This page is still under construction...</h1>
 	  
       </div>
 
