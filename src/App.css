@@ -19,6 +19,7 @@ html {
 }
 
 .App-header {
+
     background: linear-gradient(128deg, rgba(176,11,144,1) 0%, rgba(140,52,166,1) 27%, rgba(78,123,205,1) 68%, rgba(0,212,255,1) 99%);
 
     display: flex;
@@ -38,6 +39,7 @@ html {
 
     opacity: 1;
 
+
     
 }
 
@@ -51,6 +53,7 @@ html {
     
 }
 
+
 .fade-1 {
     animation-delay: .2s;
 }
@@ -60,6 +63,7 @@ html {
 }
 
 @keyframes fade-in {
+
     from {
 	top: 20px;
 	opacity: 0;
@@ -70,6 +74,7 @@ html {
     }
 }
 
+<<<<<<< HEAD
 .project-grid {
     display: flex;
     padding: 0 30px; 
@@ -131,4 +136,5 @@ html {
      /* 3d rendering */
     transform-style: preserve-3d;
     backface-visibility: hidden; 
+
 }

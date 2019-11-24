@@ -8,6 +8,7 @@ import ProjectTile from './Projecttile';
 
 function App() {
   return (
+
       <div className="App">
 	  <header className="App-header">
 
@@ -27,12 +28,10 @@ function App() {
 
 	      <div className="project-grid">
 
-		  <ProjectTile title="Chair Game" description="Amazing mobile game for iOS everyone can love; It's musical chairs for your smartphone!" />
+		  <ProjectTile title="Chair Game" description="Amazing mobile game for iOS everyone can love; It's musical chairs for your
+	</header>
+    </div>
 
-	      </div>
-	  </div>
-	  
-      </div>
   );
 }
 
