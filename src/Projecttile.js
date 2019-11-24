@@ -45,7 +45,7 @@ function ProjectThis(props) {
 	<div className="project-tile fade fade-2">
 
 	    <div className="project-tile-content">
-		<h1 className="project-title">{props.title}</h1>
+		<h1 className="project-title"><a href={props.url}>{props.title}</a></h1>
 		<p className="project-description">{props.description}</p>
 	    </div>
 	    
