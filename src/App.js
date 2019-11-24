@@ -8,6 +8,7 @@ import ProjectTile from './Projecttile';
 
 function App() {
   return (
+<<<<<<< HEAD
       <div className="App">
 	  <header className="App-header">
 
@@ -33,6 +34,22 @@ function App() {
 	  </div>
 	  
       </div>
+=======
+    <div className="App">
+	<header className="App-header">
+
+	    <div className="avatar">
+
+	    </div>
+
+	    <div className="avatar"></div>
+	    <div className="title">
+		<h1>Øyvind Monsen</h1>
+		<h2>portfolio website</h2>
+	    </div>
+	</header>
+    </div>
+>>>>>>> 3e0d9bd32d02ad421315db1e7fc43ef84df76423
   );
 }
 
