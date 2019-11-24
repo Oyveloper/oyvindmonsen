@@ -8,6 +8,7 @@ import ProjectTile from './Projecttile';
 
 function App() {
   return (
+
       <div className="App">
 	  <header className="App-header">
 
@@ -33,6 +34,7 @@ function App() {
 	  </div>
 	  
       </div>
+
   );
 }
 

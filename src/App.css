@@ -40,7 +40,6 @@ html {
     opacity: 1;
 
 
-    
 }
 
 .fade {
@@ -49,10 +48,10 @@ html {
     animation-name: fade-in;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
+
     animation-duration: 1s;
     
 }
-
 
 .fade-1 {
     animation-delay: .2s;
@@ -73,8 +72,6 @@ html {
 	opacity: 1;
     }
 }
-
-
 
 .project-grid {
     display: flex;
@@ -137,5 +134,4 @@ html {
      /* 3d rendering */
     transform-style: preserve-3d;
     backface-visibility: hidden; 
-
 }
