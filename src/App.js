@@ -2,6 +2,7 @@ import React from "react";
 import Header from './Header.js';
 import Card from './Card.js';
 import Avatar from './Avatar.js';
+import FancyHeader from './FancyHeader';
 import './App.scss';
 
 export default function App() {
@@ -28,6 +29,8 @@ export default function App() {
               </Card>
             </div>
           </div>
+
+          <FancyHeader text="Some cool projects"/>
 
         </div>
     );

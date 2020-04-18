@@ -42,7 +42,7 @@ a:hover {
 }
 
 #title-card {
-    width: 70%;
+    width: 80%;
     height: 250px;
 }
 
@@ -51,7 +51,7 @@ a:hover {
 }
 
 #about-card {
-    width: 70%;
+    width: 80%;
     height: 250px;
     position: relative;
     top: -100px;
@@ -104,4 +104,25 @@ a:hover {
     width: $avatar-size;
     height: $avatar-size;
     border-radius: $avatar-size / 2;
+}
+
+
+// Fancy header
+.FancyHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.FancyHeader h2 {
+}
+
+.FancyHeader svg {
+    margin: 0 60px;
+    height: 1px;
+    flex-grow: 1;
 }
