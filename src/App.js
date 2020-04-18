@@ -3,6 +3,7 @@ import Header from './Header.js';
 import Card from './Card.js';
 import Avatar from './Avatar.js';
 import FancyHeader from './FancyHeader';
+import ProjectView from './ProjectView';
 import './App.scss';
 
 export default function App() {
@@ -31,7 +32,7 @@ export default function App() {
           </div>
 
           <FancyHeader text="Some cool projects"/>
-
+          <ProjectView title="ChairGame" description="Cool game"/>
         </div>
     );
 }
