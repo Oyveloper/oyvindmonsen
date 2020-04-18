@@ -1,48 +1,34 @@
-import React from 'react';
+import React from "react";
+import Header from './Header.js';
+import Card from './Card.js';
+import Avatar from './Avatar.js';
+import './App.scss';
 
-import './App.css';
-import ProjectTile from './Projecttile';
+export default function App() {
+    return (
+        <div className="App">
+          <Header/>
+          <div id="content">
+            <div id="title-container">
+              <Card color="primary" id="title-card">
+                <h1>Øyvind Monsen</h1>
+                <h3 id="tagline">CS student | Fullstack dev | Tech enthusiast</h3>
+              </Card>
+              <Card color="secondary" id="about-card">
+                <div id="about-text">
+                  <h2>About me</h2>
+                  <p>
+                    I’m 20 years old who’s been programming since 15.
+                    Currently I’m sutdying computer science at NTNU in Trondheim as well as working part time at Biblioteksystemer AS.
+                    I usually do web development, both frontend and backend, but have also been doing mobile, games and even
+                    scanner firmware.
+                  </p>
+                </div>
+                <Avatar id="about-avatar"/>
+              </Card>
+            </div>
+          </div>
 
-
-
-
-function App() {
-  return (
-
-      <div className="App">
-	  <header className="App-header">
-
-	      <div className="avatar">
-
-	      </div>
-
-	      <div className="avatar"></div>
-	      <div className="title fade">
-		  <h1>Øyvind Monsen</h1>
-		  <h2>portfolio website</h2>
-	      </div>
-	  </header>
-
-	  <div className="projects">
-	      <h1 className="fade fade-1">Projects</h1>
-
-	      <div className="project-grid">
-
-		  <ProjectTile title="Chair Game" description="Amazing mobile game for iOS everyone can love; It's musical chairs for your smartphone!" url="https://apps.apple.com/no/app/chair-game-musical-chairs/id1210198384?l=no" />
-		  <ProjectTile title="Me Camera" description="Prank camera that takes a photo of the photograph instead of the subject." url="https://apps.apple.com/us/app/mecamera/id1071230400?ls=1"/>
-
-	      </div>
-	  </div>
-
-
-	  <h1 className="fade fade-3">This page is still under construction...</h1>
-	  
-      </div>
-
-  );
+        </div>
+    );
 }
-
-
-
-
-export default App;
