@@ -1,0 +1,107 @@
+$bg: #0A192F;
+$lightForeground: #B6D3FF;
+$highlight: white;
+$primary: #F0C674;
+$secondary: #CC666F;
+$avatar-size: 150px;
+
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.App {
+    background-color: $bg;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: $lightForeground;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: $highlight;
+}
+
+// Layout
+#content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#title-container {
+    width: 70vw;
+}
+
+#title-card {
+    width: 70%;
+    height: 250px;
+}
+
+#tagline {
+    color: black;
+}
+
+#about-card {
+    width: 70%;
+    height: 250px;
+    position: relative;
+    top: -100px;
+    right: 0px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#about-card p {
+    color: black;
+}
+
+#about-avatar {
+    margin-left: 20px;
+}
+
+// Header
+.Header {
+    widht: 100%;
+    text-align: right;
+    padding: 20px;
+}
+
+.Header li {
+    font-size: 20px;
+    color: $lightForeground;
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+}
+
+// Card
+.Card {
+    color: white;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.Card-primary {
+    background-color: $primary;
+}
+
+.Card-secondary {
+    background-color: $secondary;
+}
+
+// Avatar
+.avatar-image {
+    width: $avatar-size;
+    height: $avatar-size;
+    border-radius: $avatar-size / 2;
+}
