@@ -80,6 +80,8 @@ a:hover {
 #projects {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 
@@ -148,6 +150,20 @@ a:hover {
 .ProjectView {
     color: white;
     width: 60%;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.project-text {
+    margin-right: 20px;
+}
+
+.project-text h3 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 10px;
 }
 
 .ProjectView p {
@@ -158,4 +174,8 @@ a:hover {
     height: 400px;
     width: auto;
     float: right;
+}
+
+.project-key-facts ul {
+    margin-left: 20px;
 }

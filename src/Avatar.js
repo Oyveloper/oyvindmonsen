@@ -1,5 +1,5 @@
 import React from "react";
-import oyvatar from "./oyvatar.png";
+import oyvatar from "./realFace.png";
 export default function Avatar(props) {
     const id = props.id;
     return (
