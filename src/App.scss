@@ -1,181 +1,206 @@
-$bg: #0A192F;
-$lightForeground: #B6D3FF;
+$bg: #0a192f;
+$lightForeground: #b6d3ff;
 $highlight: white;
-$primary: #F0C674;
-$secondary: #CC666F;
+$primary: #f0c674;
+$secondary: #cc666f;
 $avatar-size: 150px;
 
 h1 {
-    font-size: 4rem;
-    font-weight: 300;
+  font-size: 4rem;
+  font-weight: 300;
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h3 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h4 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .App {
-    background-color: $bg;
-    width: 100%;
-    height: 100%;
+  background-color: $bg;
+  width: 100%;
+  height: 100%;
 }
 
 a {
-    color: $lightForeground;
-    text-decoration: none;
+  color: $lightForeground;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: $highlight;
+  text-decoration: underline;
+  color: $highlight;
 }
 
 // Layout
 #content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #title-container {
-    width: 70vw;
+  width: 70vw;
 }
 
 #title-card {
-    width: 80%;
-    height: 250px;
+  width: 80%;
+  height: 250px;
 }
 
 #tagline {
-    color: black;
+  color: black;
 }
 
 #about-card {
-    width: 80%;
-    height: 250px;
-    position: relative;
-    top: -100px;
-    right: 0px;
-    float: right;
-    display: flex;
-    align-items: center;
+  width: 80%;
+  min-height: 250px;
+  position: relative;
+  top: -100px;
+  right: 0px;
+  float: right;
+  display: flex;
+  align-items: center;
 }
 
 #about-card p {
-    color: black;
+  color: black;
 }
 
 #about-avatar {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
-
 
 // Header
 .Header {
-    widht: 100%;
-    text-align: right;
-    padding: 20px;
+  widht: 100%;
+  text-align: right;
+  padding: 20px;
 }
 
 .Header li {
-    font-size: 20px;
-    color: $lightForeground;
-    list-style: none;
-    display: inline;
-    margin-left: 20px;
+  font-size: 20px;
+  color: $lightForeground;
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
 }
 
 // Card
 .Card {
-    color: white;
-    padding: 40px;
-    border-radius: 5px;
+  color: white;
+  padding: 40px;
+  border-radius: 5px;
 }
 
 .Card-primary {
-    background-color: $primary;
+  background-color: $primary;
 }
 
 .Card-secondary {
-    background-color: $secondary;
+  background-color: $secondary;
 }
 
 // Avatar
 .avatar-image {
-    width: $avatar-size;
-    height: $avatar-size;
-    border-radius: $avatar-size / 2;
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: $avatar-size / 2;
 }
-
 
 // Fancy header
 .FancyHeader {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 40px;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .FancyHeader h2 {
 }
 
 .FancyHeader svg {
-    margin: 0 60px;
-    height: 1px;
-    flex-grow: 1;
+  margin: 0 60px;
+  height: 1px;
+  flex-grow: 1;
 }
-
 
 // Project View
 .ProjectView {
-    color: white;
-    width: 60%;
-    display: flex;
-    margin-bottom: 50px;
+  color: white;
+  width: 60%;
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .project-text {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .project-text h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h4 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-.ProjectView p {
-    float: left;
+.ProjectView p  {
+  float: left;
 }
 
 .ProjectView img {
-    height: 400px;
-    width: auto;
-    float: right;
+  height: 400px;
+  width: auto;
+  float: right;
 }
 
 .project-key-facts ul {
-    margin-left: 20px;
+  margin-left: 20px;
+}
+
+// Responsive design
+
+@media only screen and (max-width: 1150px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .ProjectView {
+    flex-direction: column;
+    img {
+      float: none;
+    }
+  }
 }
