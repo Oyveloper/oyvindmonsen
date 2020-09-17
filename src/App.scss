@@ -1,4 +1,4 @@
-$bg: #0a192f;
+$bg: white;
 $lightForeground: #b6d3ff;
 $highlight: white;
 $primary: #f0c674;
@@ -35,7 +35,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: $highlight;
+  color: $primary;
 }
 
 // Layout
@@ -140,14 +140,6 @@ a:hover {
   flex-grow: 1;
 }
 
-// Project View
-.ProjectView {
-  color: white;
-  width: 60%;
-  display: flex;
-  margin-bottom: 50px;
-}
-
 .project-text {
   margin-right: 20px;
 }
@@ -158,16 +150,6 @@ a:hover {
 
 h4 {
   margin-top: 10px;
-}
-
-.ProjectView p  {
-  float: left;
-}
-
-.ProjectView img {
-  height: 400px;
-  width: auto;
-  float: right;
 }
 
 .project-key-facts ul {
@@ -187,30 +169,7 @@ h4 {
     font-size: 2.5rem;
   }
 
-  h2 {
-    // font-size: 30px;
-  }
-
   h4 {
     font-size: 0.8rem;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .ProjectView {
-    flex-direction: column;
-    img {
-      float: none;
-      width: 90%;
-      height: auto;
-    }
-  }
-
-  .FancyHeader svg {
-    display: none;
-  }
-
-  .avatar-image {
-    display: none;
   }
 }

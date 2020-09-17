@@ -1,0 +1,39 @@
+.IntroSection {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#infoBlob {
+  position: relative;
+  width: 550px;
+  height: 550px;
+}
+
+#infoBlob svg {
+  width: 100%;
+  height: 100%;
+}
+
+#infoBlob > * {
+  position: absolute;
+}
+
+#infoBlobText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 130px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: right;
+}
+
+#floatingAvatar {
+  top: 10%;
+  left: 20%;
+}
