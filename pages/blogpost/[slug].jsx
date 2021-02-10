@@ -1,33 +1,35 @@
 import serializers from "../../core/serializers";
 import sanityClient from "../../core/client.js";
+import urlFor from "../../core/imageBuilder";
 import BlockContent from "@sanity/block-content-to-react";
-import imageUrlBuilder from "@sanity/image-url";
-
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source) {
-  return builder.image(source);
-}
+import GeneralPage from "../../components/GeneralPage";
+import AuthorInformation from "../../components/AuthorInformation";
 
 const BlogPost = ({ post }) => {
-  return post === null ? (
-    <h2>404 - Could not find the post</h2>
-  ) : (
-    <div>
+  const content =
+    post === null ? (
+      <h2>404 - not found</h2>
+    ) : (
       <div>
-        <h2>{post.title}</h2>
-        <h4>{post.name}</h4>
+        <header className="mb-10">
+          <img
+            className="w-full object-cover h-80"
+            src={urlFor(post.mainImage).url()}
+            alt="Main image of post"
+          />
+        </header>
+        <div>
+          <article className="md:px-20 lg:px-52 px-5">
+            <AuthorInformation name={post.name} />
+            <h1 className="font-serif text-5xl lg:text-6xl mb-10 text-gray-700">
+              {post.title}
+            </h1>
+            <BlockContent blocks={post.body} serializers={serializers} />
+          </article>
+        </div>
       </div>
-
-      <img
-        src={urlFor(post.mainImage).width(200).url()}
-        alt="Main image of post"
-      />
-
-      <article>
-        <BlockContent blocks={post.body} serializers={serializers} />
-      </article>
-    </div>
-  );
+    );
+  return <GeneralPage pageLocation="blog">{content}</GeneralPage>;
 };
 
 export async function getServerSideProps(context) {
