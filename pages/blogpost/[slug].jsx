@@ -4,6 +4,7 @@ import urlFor from "../../core/imageBuilder";
 import BlockContent from "@sanity/block-content-to-react";
 import GeneralPage from "../../components/GeneralPage";
 import AuthorInformation from "../../components/AuthorInformation";
+import Head from "next/head";
 
 const BlogPost = ({ post }) => {
   const content =
@@ -11,6 +12,9 @@ const BlogPost = ({ post }) => {
       <h2>404 - not found</h2>
     ) : (
       <div>
+        <Head>
+          <title>{post.title}</title>
+        </Head>
         <header className="mb-10">
           <img
             className="w-full object-cover h-80"

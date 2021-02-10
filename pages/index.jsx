@@ -2,10 +2,14 @@ import GeneralPage from "../components/GeneralPage";
 import PortfolioSection from "../components/PortfolioSection";
 import sanityClient from "../core/client";
 import urlFor from "../core/imageBuilder";
+import Head from "next/head";
 
 export default function Home({ author, portfolioItems }) {
   return (
     <GeneralPage pageLocation="home">
+      <Head>
+        <title>Øyvind Monsen</title>
+      </Head>
       <header className="w-full">
         <div className="bg-gray-700 w-full h-96 grid sm:grid-cols-2 grid-cols-2 md:grid-cols-4 lg-grid-cols-4 grid-rows-none">
           <div
