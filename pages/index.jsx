@@ -1,8 +1,9 @@
 import GeneralPage from "../components/GeneralPage";
+import PortfolioSection from "../components/PortfolioSection";
 import sanityClient from "../core/client";
 import urlFor from "../core/imageBuilder";
 
-export default function Home({ author }) {
+export default function Home({ author, portfolioItems }) {
   return (
     <GeneralPage pageLocation="home">
       <header className="w-full">
@@ -31,13 +32,15 @@ export default function Home({ author }) {
           </div>
         </div>
       </header>
+      <PortfolioSection portfolioItems={portfolioItems} />
     </GeneralPage>
   );
 }
 
 export async function getStaticProps() {
-  const author = await sanityClient.fetch(
-    `*[_type == "author"]{
+  const [author, portfolioItems] = await Promise.all([
+    sanityClient.fetch(
+      `*[_type == "author"]{
       name,
       bio,
       image{
@@ -47,11 +50,28 @@ export async function getStaticProps() {
         }
       }
     }[0]`
-  );
+    ),
+    sanityClient.fetch(
+      `*[_type == "portfolioItem"]{
+          name,
+          image{
+              asset->{
+                  _id,
+                  url
+              }
+          },
+          description,
+          url,
+          technologies,
+
+      }`
+    ),
+  ]);
 
   return {
     props: {
       author: author,
+      portfolioItems: portfolioItems,
     },
   };
 }

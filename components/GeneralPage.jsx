@@ -3,9 +3,9 @@ import Navbar from "./Navbar";
 
 const GeneralPage = ({ children, pageLocation }) => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-100">
       <Navbar location={pageLocation} />
-      <div className="bg-gray-100">{children}</div>
+      <div className="">{children}</div>
     </div>
   );
 };

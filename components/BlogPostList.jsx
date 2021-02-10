@@ -23,7 +23,7 @@ const BlogPostList = ({ posts }) => {
                     src={post.mainImage.asset.url}
                     alt="the main image of the post"
                   />
-                  <span className="block relative h-full flex justify-end items-end ">
+                  <span className="relative h-full flex justify-end items-end ">
                     <h2 className="w-full text-gray-800 text-lg font-bold px-3 py-4 bg-white">
                       {post.title}
                     </h2>

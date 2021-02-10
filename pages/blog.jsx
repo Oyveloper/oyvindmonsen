@@ -5,7 +5,7 @@ import sanityClient from "../core/client.js";
 const Blog = ({ posts }) => (
   <GeneralPage pageLocation="blog">
     <h1 className="text-5xl flex justify-center py-20 font-serif">
-      This is my blog
+      Blog about tech
     </h1>
     <div className="px-12">
       <BlogPostList posts={posts} />

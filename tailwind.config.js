@@ -12,6 +12,12 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
     },
+    extend: {
+      transitionProperty: {
+        'height': 'height',
+        'maxHeight': 'maxHeight'
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -852,6 +858,11 @@ module.exports = {
     width: ['responsive'],
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
+
+    extend: {
+      height: ['group-hover', 'hover'],
+      maxHeight: ['group-hover', 'hover'],
+    }
   },
   plugins: [],
 }
