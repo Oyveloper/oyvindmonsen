@@ -1,3 +1,4 @@
+import React from "react";
 import BlogPostList from "../components/BlogPostList";
 import GeneralPage from "../components/GeneralPage";
 import sanityClient from "../core/client.js";

@@ -1,3 +1,4 @@
+import React from "react";
 import serializers from "../../core/serializers";
 import sanityClient from "../../core/client.js";
 import urlFor from "../../core/imageBuilder";

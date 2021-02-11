@@ -1,3 +1,4 @@
+import React from "react";
 import GeneralPage from "../components/GeneralPage";
 import HeroSection from "../components/HeroSection";
 import PortfolioSection from "../components/PortfolioSection";

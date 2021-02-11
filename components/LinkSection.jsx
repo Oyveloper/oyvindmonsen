@@ -1,5 +1,4 @@
-import Link from "next/link";
-import React from "REact";
+import React from "react";
 
 const LinkItem = ({ text, url }) => (
   <a
