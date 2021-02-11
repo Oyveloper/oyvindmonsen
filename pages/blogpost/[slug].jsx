@@ -36,8 +36,8 @@ const BlogPost = ({ post }) => {
   return <GeneralPage pageLocation="blog">{content}</GeneralPage>;
 };
 
-export async function getServerSideProps(context) {
-  const { slug = "" } = context.query;
+export async function getStaticProps(context) {
+  const { slug = "" } = context.params;
 
   const post = await sanityClient.fetch(
     `*[slug.current == "${slug}"]{
@@ -58,6 +58,23 @@ export async function getServerSideProps(context) {
     props: {
       post: post,
     },
+    revalidate: 10,
+  };
+}
+
+export async function getStaticPaths() {
+  const posts = await sanityClient.fetch(
+    `*[_type == "post"]{
+      slug,
+    }[0...20]`
+  );
+  const paths = posts.map((post) => {
+    return { params: { slug: post.slug } };
+  });
+
+  return {
+    fallback: "blocking",
+    paths: paths,
   };
 }
 
