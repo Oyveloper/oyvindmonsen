@@ -70,7 +70,7 @@ export async function getStaticPaths() {
     }[0...20]`
   );
   const paths = posts.map((post) => {
-    return { params: { slug: post.slug } };
+    return { params: { slug: post.slug.current } };
   });
 
   return {

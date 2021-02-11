@@ -1,5 +1,4 @@
 import React from "react";
-import sanityClient from "../core/client";
 import PortfolioItemCard from "./PortfolioItemCard";
 
 const PortfolioSection = ({ portfolioItems }) => {
