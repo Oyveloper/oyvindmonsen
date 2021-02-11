@@ -4,7 +4,7 @@ import urlFor from "../core/imageBuilder";
 
 const PortfolioItemCard = ({ portfolioItem }) => {
   const title =
-    portfolioItem.url == "" ? (
+    portfolioItem.url == undefined ? (
       <h3 className="font-bold text-lg">{portfolioItem.name}</h3>
     ) : (
       <a href={portfolioItem.url} className="underline">
