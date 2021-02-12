@@ -4,21 +4,25 @@
 h1 {
   @apply text-5xl;
   @apply font-bold;
+  @apply text-gray-800;
 }
 
 h2 {
   @apply text-4xl;
   @apply font-bold;
+  @apply text-gray-700;
 }
 
 h3 {
   @apply text-2xl;
   @apply font-bold;
+  @apply text-gray-700;
 }
 
 h4 {
   @apply text-xl;
   @apply font-bold;
+  @apply text-gray-700;
 }
 
 a {
