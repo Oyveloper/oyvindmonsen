@@ -7,7 +7,7 @@ const PortfolioItemCard = ({ portfolioItem }) => {
     portfolioItem.url == undefined ? (
       <h3 className="font-bold text-lg">{portfolioItem.name}</h3>
     ) : (
-      <a href={portfolioItem.url} className="underline">
+      <a href={portfolioItem.url} className="underline text-black">
         <h3 className="font-bold text-lg">{portfolioItem.name}</h3>
       </a>
     );
