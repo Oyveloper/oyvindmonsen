@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
+import urlFor from "../core/imageBuilder";
+
 const BlogPostList = ({ posts }) => {
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
       {posts &&
         posts.map((post, index) => (
           <div
@@ -21,7 +23,7 @@ const BlogPostList = ({ posts }) => {
                 >
                   <img
                     className="w-full h-full rounded object-cover absolute"
-                    src={post.mainImage.asset.url}
+                    src={urlFor(post.mainImage).width(400).url()}
                     alt="the main image of the post"
                   />
                   <span className="relative h-full flex justify-end items-end ">

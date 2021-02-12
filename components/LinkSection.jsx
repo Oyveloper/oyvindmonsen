@@ -1,10 +1,7 @@
 import React from "react";
 
 const LinkItem = ({ text, url }) => (
-  <a
-    href={url}
-    className="mr-2 p-3 text-white bg-blue-500 rounded-lg underline"
-  >
+  <a href={url} className="mr-2 p-3 text-white bg-blue-500 rounded-lg">
     {text}
   </a>
 );
