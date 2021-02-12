@@ -12,12 +12,12 @@ h2 {
 }
 
 h3 {
-  @apply text-3xl;
+  @apply text-2xl;
   @apply font-bold;
 }
 
 h4 {
-  @apply text-2xl;
+  @apply text-xl;
   @apply font-bold;
 }
 
@@ -27,6 +27,14 @@ a {
 
 a:hover {
   @apply underline;
+}
+
+article p {
+  @apply mb-5;
+}
+
+article h2 {
+  @apply mt-5;
 }
 
 blockquote {
