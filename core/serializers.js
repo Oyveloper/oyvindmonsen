@@ -13,9 +13,6 @@ const serializers = {
         {props.node.code}
       </SyntaxHighlighter>
     ),
-    h1: (props) => (
-      <h1 className="text-lg font-bold">{props.children}</h1>
-    )
   },
 };
 
