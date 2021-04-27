@@ -7,7 +7,7 @@ import Head from "next/head";
 
 export default function Home({ author, portfolioItems }) {
   return (
-    <GeneralPage pageLocation="home">
+    <GeneralPage pageLocation='home'>
       <Head>
         <title>Øyvind Monsen</title>
       </Head>
@@ -40,9 +40,8 @@ export async function getStaticProps() {
                   url
               }
           },
-          description,
           url,
-          technologies,
+          slug,
 
       }`
     ),
