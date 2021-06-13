@@ -16,25 +16,30 @@ const BlogPost = ({ post }) => {
         <Head>
           <title>{post.title}</title>
         </Head>
-        <header className="mb-10">
+        <header className='mb-10'>
           <img
-            className="w-full object-cover h-80"
+            className='w-full object-cover h-80'
             src={urlFor(post.mainImage).url()}
-            alt="Main image of post"
+            alt='Main image of post'
           />
         </header>
         <div>
-          <article className="md:px-20 lg:px-52 px-5">
+          <article className='md:px-20 lg:px-52 px-5'>
             <AuthorInformation name={post.name} />
-            <h1 className="font-serif text-5xl lg:text-6xl mb-10 text-gray-700">
+            <h1 className='font-serif text-5xl lg:text-6xl mb-10 text-gray-700'>
               {post.title}
             </h1>
-            <BlockContent blocks={post.body} serializers={serializers} />
+            <BlockContent
+              blocks={post.body}
+              serializers={serializers}
+              projectId={"mjul3ts5"}
+              dataset={"production"}
+            />
           </article>
         </div>
       </div>
     );
-  return <GeneralPage pageLocation="blog">{content}</GeneralPage>;
+  return <GeneralPage pageLocation='blog'>{content}</GeneralPage>;
 };
 
 export async function getStaticProps(context) {

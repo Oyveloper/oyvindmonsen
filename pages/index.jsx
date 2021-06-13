@@ -52,5 +52,6 @@ export async function getStaticProps() {
       author: author,
       portfolioItems: portfolioItems,
     },
+    revalidate: 30,
   };
 }
