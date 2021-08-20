@@ -63,7 +63,19 @@ export default {
       options: {hotspot: true},
     },
     {
-      type: 'code'
+      type: 'code',
+      options: {
+        languageAlternatives: [
+          {title: 'JavaScript', value: 'javascript'},
+          {title: 'TypeScript', value: 'typescript'},
+          {title: 'Rust', value: 'rust'},
+          {title: 'HTML', value: 'html'},
+          {title: 'CSS', value: 'css'},
+          {title: 'SASS', value: 'satsss'},
+          {title: 'Python', value: 'python'},
+          {title: 'Text', value: 'text'},
+        ]
+      }
     }
   ],
 }
