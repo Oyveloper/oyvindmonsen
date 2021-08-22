@@ -28,7 +28,7 @@ export async function getServerSideProps(context) {
                       url
                   }
               }
-          }`
+          } | order(_createdAt desc)`
   );
 
   return {
